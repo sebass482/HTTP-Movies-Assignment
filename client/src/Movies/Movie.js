@@ -41,7 +41,7 @@ function Movie({ addToSavedList }) {
   if (!movie) {
     return <div>Loading movie information...</div>;
   }
-  
+  console.log('Calling too many times')
   return (
     <div className="save-wrapper">
       <MovieCard movie={movie} />
